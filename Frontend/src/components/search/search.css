@@ -1,0 +1,141 @@
+.search-results {
+  background: #f7f9fc;
+  min-height: 80vh;
+}
+
+.search-results h2 {
+  color: #2d3954;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.results-count {
+  color: #72809d;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.search-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+}
+
+.filters-sidebar {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.filter-header h3 {
+  color: #2d3954;
+  font-size: 20px;
+}
+
+.clear-filters {
+  background: none;
+  border: none;
+  color: #27ae60;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.clear-filters:hover {
+  text-decoration: underline;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3954;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #27ae60;
+}
+
+.results-grid {
+  width: 100%;
+}
+
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.no-results h3 {
+  color: #2d3954;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.no-results p {
+  color: #72809d;
+  margin-bottom: 20px;
+}
+
+.search-results .box .img,
+.results-grid .box .img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.search-results .box .img img,
+.results-grid .box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s;
+}
+
+.search-results .box:hover .img img,
+.results-grid .box:hover .img img {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 968px) {
+  .search-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-sidebar {
+    position: static;
+  }
+}

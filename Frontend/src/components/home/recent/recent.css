@@ -1,0 +1,38 @@
+.recent .text {
+  padding: 30px;
+}
+.recent .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.recent .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+.recent p {
+  color: #72809d;
+}
+.recent .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px;
+}
+.recent .box .img {
+  width: 100%;
+  height: 250px; 
+  overflow: hidden; 
+  position: relative;
+}
+
+.recent .box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s;
+}
+
+.recent .box:hover .img img {
+  transform: scale(1.05);
+}
