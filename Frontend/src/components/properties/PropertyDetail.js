@@ -15,22 +15,20 @@ const PropertyDetail = () => {
   const [loading, setLoading] = useState(true);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-// eslint-disable-next-line react-hooks/exhaustive-deps
-
   useEffect(() => {
+    const fetchProperty = async () => {
+      try {
+        const { data } = await axios.get(`${API_URL}/api/properties/${id}`);
+        setProperty(data);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+        setLoading(false);
+      }
+    };
+    
     fetchProperty();
   }, [id]);
-
-  const fetchProperty = async () => {
-    try {
-      const { data } = await axios.get(`${API_URL}/api/properties/${id}`);
-      setProperty(data);
-      setLoading(false);
-    } catch (error) {
-      console.error(error);
-      setLoading(false);
-    }
-  };
 
   const handleDelete = async () => {
     if (window.confirm('Are you sure you want to delete this property?')) {
