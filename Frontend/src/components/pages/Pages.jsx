@@ -25,8 +25,8 @@ const Pages = () => {
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={Signup} />
           <Route exact path='/add-property' component={AddProperty} />
+          <Route exact path='/edit-property/:id' component={EditProperty} />
           <Route exact path='/property/:id' component={PropertyDetail} />  
-          <Route exact path='/property/:id/edit' component={EditProperty} /> 
           <Route exact path='/search' component={SearchResults} />
         </Switch>
         <Footer />
