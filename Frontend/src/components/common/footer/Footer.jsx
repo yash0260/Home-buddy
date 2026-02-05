@@ -17,16 +17,16 @@ const Footer = () => {
             </p>
             
             <div className="social-links">
-              <a href="#" aria-label="Facebook">
+              <a href="/" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" aria-label="Instagram">
+              <a href="/" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" aria-label="Twitter">
+              <a href="/" aria-label="Twitter">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="#" aria-label="WhatsApp">
+              <a href="/" aria-label="WhatsApp">
                 <i className="fab fa-whatsapp"></i>
               </a>
             </div>
