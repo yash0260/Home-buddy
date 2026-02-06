@@ -206,7 +206,7 @@ const SearchResults = () => {
                       </div>
                       <div className='button flex'>
                         <div>
-                          <button className='btn2'>Rs{property.price.toLocaleString()} /sqft</button>
+                          <button className='btn2'>Rs{property.price.toLocaleString()}</button>
                           <label>{property.propertyType}</label>
                         </div>
                       </div>

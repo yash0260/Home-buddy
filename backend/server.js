@@ -13,7 +13,7 @@ app.use(cors({
     'http://localhost:3000',
     'http://localhost:3001',
     process.env.FRONTEND_URL,
-    'https://home-buddy-comb.vercel.app',
+    'https://home-buddy-comb-55m06hwxz-yashs-projects-dbca437d.vercel.app',
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],

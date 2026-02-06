@@ -29,7 +29,7 @@ const RecentCard = ({ properties }) => {
                 </div>
                 <div className='button flex'>
                   <div>
-                    <button className='btn2'>Rs{price.toLocaleString()} /sqft</button> 
+                    <button className='btn2'>Rs{price.toLocaleString()} </button> 
                     <label htmlFor=''>{type || property.propertyType}</label>
                   </div>
                 </div>
